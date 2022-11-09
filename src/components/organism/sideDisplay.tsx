@@ -2,7 +2,7 @@
 /* eslint-disable no-empty-pattern */
 /* eslint-disable prettier/prettier */
 import * as React from "react";
-import logo from "../../assets/blue-logo.png";
+import logo from "../../../assets/images/logo-white.svg";
 export type SideDisplayProps = {
   header?: string;
   content?: string;
