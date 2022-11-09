@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-empty-pattern */
 /* eslint-disable prettier/prettier */
-import logo from "../../assets/images/logo-white.svg";
+import logo from "../../../assets/images/logo-white.svg";
 import { Text, HeaderText } from "../atoms/Text";
 
 export type SideDisplayProps = {
