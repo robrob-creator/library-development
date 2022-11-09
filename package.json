@@ -4,10 +4,16 @@
   "description": "project isaac component library",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build:tailwind": "npx tailwindcss -o ./dist/tailwind.css --minify",
+    "build:rollup": "rollup -c",
+    "build:lib": "yarn build:tailwind && yarn build:rollup",
+    "dev": "react-scripts start",
+    "prepare": "yarn build:lib"
   },
   "author": "robert",
   "license": "ISC",
