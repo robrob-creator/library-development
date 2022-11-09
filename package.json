@@ -8,16 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-<<<<<<< HEAD
-    "build:tailwind": "npx tailwindcss -o ./dist/tailwind.css --minify",
-    "build:rollup": "rollup -c",
-    "copy-assets": "cp -rv ./assets/images ./dist/assets/",
-    "build:lib": "yarn build:tailwind && yarn build:rollup && npm run copy-assets",
-    "dev": "react-scripts start",
-    "prepare": "yarn build:lib"
-=======
     "build-lib": "rollup -c"
->>>>>>> parent of 2808df3 (feature/layout-component)
   },
   "author": "robert",
   "license": "ISC",
