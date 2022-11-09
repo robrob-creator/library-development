@@ -2,7 +2,8 @@
   "name": "project-isaac-components",
   "version": "1.0.0",
   "description": "project isaac component library",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
