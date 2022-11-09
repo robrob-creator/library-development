@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-empty-pattern */
 /* eslint-disable prettier/prettier */
-import logo from "../../../assets/images/logo-white.svg";
-import { Text, HeaderText } from "../atoms/Text";
-
+import * as React from "react";
+import logo from "../../assets/blue-logo.png";
 export type SideDisplayProps = {
   header?: string;
   content?: string;
@@ -14,26 +13,30 @@ export const SideDisplay = <
 >({}: PROPS): JSX.Element => {
   return (
     <div
-      className={`flex  font-Poppins justify-center bg-main bg-cover`}
+      className={`flex items-start justify-center bg-[url('https://img.freepik.com/free-vector/gradient-purple-wavy-background_52683-74031.jpg?w=900&t=st=1667887208~exp=1667887808~hmac=7237cf35ae4955671d1696dbd872f63a39558f9fe9ec2d48bf93a64c3de6f20a')] bg-cover`}
       style={{ width: "550px", height: "832px" }}
     >
-      <div className="flex-row mt-32 ">
-        <img className="w-80 h-20" src={logo} />
+      <div className="flex-row mt-24 ">
+        <div className="justify-center">
+          <img className="w-80 h-20 " src={logo} />
+        </div>
         <div
-          className="flex flex-col space-y-2 items-center justify-end"
+          className="flex flex-col mt-12 space-y-2 items-center justify-end"
           style={{ width: "432px", height: "206px" }}
         >
-          <HeaderText
-            color="white"
-            text="Welcome guest!"
-            className="mt-64 mb-4"
-          />
-
-          <Text
-            color="white"
-            text="ut eu sem integer vitae justo eget magna fermentum iaculis eu non
-            diam phasellus vestibulum lorem sed risus ultricies tristique"
-          />
+          <p
+            className={`text-4xl font-bold tracking-wider text-white`}
+            style={{ width: "432px" }}
+          >
+            Welcome guest!
+          </p>
+          <p
+            className={`text-xl tracking-wider text-white`}
+            style={{ width: "432px", height: "143px" }}
+          >
+            ut eu sem integer vitae justo eget magna fermentum iaculis eu non
+            diam phasellus vestibulum lorem sed risus ultricies tristique
+          </p>
         </div>
       </div>
     </div>
